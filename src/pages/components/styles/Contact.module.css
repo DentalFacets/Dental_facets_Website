@@ -1,0 +1,71 @@
+.cntHeading {
+    height: 8rem; /* h-32 */
+    width: 100%; /* w-screen */
+    text-align: center;
+    font-size: 3.75rem;
+    background-color: #14b8a6;
+    margin-top: 1.25rem; 
+    margin-bottom: 1.25rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #ffffff; 
+    background-image: url("/image/WelImage.webp");
+}
+
+.StaticContainers {
+    margin: 1.5rem; /* m-6 */
+    padding: 2rem; /* p-8 */
+    border-radius: 0.5rem; /* rounded-lg */
+    text-align: left; /* text-left */
+    box-shadow: 
+    0.625rem 0.625rem 0.875rem 0 rgba(220, 220, 220, 1), 
+    -1.5rem -0.5rem 2.125rem 0 rgba(220, 220, 220, 1);
+}
+
+.StaticContainers p{
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    padding: 0.5rem; 
+}
+
+.linkTags {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 100; /* font-thin */
+    color: #0da2f8; /* text-sky-600 */
+}
+
+.ConHeadings {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 800; /* font-extrabold */
+    background-color: #0e4a6d; /* bg-cyan-950 */
+    color: #ffffff; /* text-white */
+    padding: 1.25rem; /* p-5 */
+    border-radius: 0.5rem; /* rounded-lg */
+    margin: 0.5rem 0; /* my-2 */
+}
+
+.FootP{
+    display: flex;
+    align-items: center;
+}
+
+.FormContainer {
+    margin: 1.5rem;
+    padding: 2rem;
+    border-radius: 0.5rem; 
+    background-color: #092b3f; 
+    color: #ffffff; 
+    box-shadow: 
+    0.625rem 0.625rem 0.875rem 0 rgba(220, 220, 220, 1), 
+    -1.5rem -0.5rem 2.125rem 0 rgba(220, 220, 220, 1);
+}
+
+.inp{
+    @apply
+    w-full h-[3rem] rounded-xl bg-cyan-900 transition-all duration-500 
+    p-3 tracking-widest my-3 outline-none focus:brightness-150
+    outline-offset-4
+    [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
+}

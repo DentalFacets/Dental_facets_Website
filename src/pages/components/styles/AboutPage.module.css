@@ -1,0 +1,43 @@
+.abtUsHeading {
+    height: 8rem;
+    width: 100%; 
+    text-align: center;
+    font-size: 3.75rem;
+    background-color: #14b8a6;
+    margin-top: 1.25rem; 
+    margin-bottom: 1.25rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #ffffff; 
+    background-image: url("/image/WelImage.webp");
+}
+
+
+.StaticContainers {
+    margin: 1.5rem;
+    padding: 2.5rem;
+    border-radius: 2%;
+    background-color: #f6f6f6;
+    box-shadow: 
+    0.625rem 0.625rem 0.875rem 0 rgba(220, 220, 220, 1), 
+    -1.5rem -0.5rem 2.125rem 0 rgba(220, 220, 220, 1);
+}
+
+
+.welHead{
+    width: 100%; 
+    text-decoration: underline; 
+    text-underline-offset: 1rem;
+    letter-spacing: 0.05em; 
+    font-size: 5vh; 
+    color: #0e7490;
+    text-shadow: 0 0.5px 0.5px rgb(0, 0, 0);
+}
+
+.imageWrapper{
+    @apply
+    relative h-[17rem] w-[17rem] rounded-full shadow-2xl
+    md:h-[20rem] md:w-[30rem] md:m-5 lg:h-[20rem] lg:w-[35rem]
+}
