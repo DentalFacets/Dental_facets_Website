@@ -84,6 +84,10 @@ const Services = () => {
     <>
       <Head>
         <title>{`Dental Facets | ${path}`}</title>
+        <link
+          rel="canonical"
+          href={`${`https://dentalfacets.netlify.app/Service/${path}`}`}
+        />
       </Head>
       <div className="relative top-20 mb-20">
         <div className={styles.slugbanner}></div>

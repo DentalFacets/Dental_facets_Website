@@ -61,7 +61,7 @@ function Contact() {
                 className={styles.FootP}
                 href={"https://maps.app.goo.gl/3tjaoArVPCsWFZuG6"}
               >
-                <Location width={"6rem"} />
+                <Location width={"3.4rem"} />
                 Map
               </Link>
             </p>
