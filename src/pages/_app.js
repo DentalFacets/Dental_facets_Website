@@ -21,14 +21,14 @@ export default function App({ Component, pageProps, router }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <title>Dental Facets | Your Smile, Our Priority</title>
+        <title>Dental   Facets - Your Trusted Dental Clinic</title>
         <meta
           name="description"
-          content="Dental Facets offers expert dental care services including preventive, cosmetic, restorative, and pediatric dentistry in a comfortable and welcoming environment."
+          content="Dental Facets offers comprehensive dental care services, including preventive, cosmetic, restorative, and pediatric dentistry. Our experienced team is dedicated to providing personalized care in a comfortable and welcoming environment."
         />
         <meta
           name="keywords"
-          content="dentist, dental care, dental clinic, cosmetic dentistry, restorative dentistry, pediatric dentistry"
+          content="dentist, dental clinic, dental care, cosmetic dentistry, restorative dentistry, pediatric dentistry, dental implants, teeth whitening, braces, orthodontics, root canal, dental cleaning, dental checkup, dental emergency, dental services, Gurugram dentist"
         />
         <meta name="author" content="Dental Facets" />
         <meta name="robots" content="index, follow" />
