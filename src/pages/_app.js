@@ -24,7 +24,7 @@ export default function App({ Component, pageProps, router }) {
         <title>Dental   Facets - Your Trusted Dental Clinic</title>
         <meta
           name="description"
-          content="Dental Facets offers comprehensive dental care services, including preventive, cosmetic, restorative, and pediatric dentistry. Our experienced team is dedicated to providing personalized care in a comfortable and welcoming environment."
+          content=" Your trusted dental clinic for teeth whitening, dental implants, braces, and more. Experienced dentists, personalized care, comfortable atmosphere."
         />
         <meta
           name="keywords"

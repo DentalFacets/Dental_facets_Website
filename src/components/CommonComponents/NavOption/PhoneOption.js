@@ -45,7 +45,7 @@ function PhoneOption({ visible }) {
             className={styles.navbtn}
           >
             <h2>
-              <Location width={"1.7rem"} />
+              <Location width={"1.7rem"} color={"#fff"} />
               Dental Facets
             </h2>
             <p>
@@ -59,7 +59,7 @@ function PhoneOption({ visible }) {
             className={styles.navbtn}
           >
             <h2>
-              <Location width={"1.7rem"} />
+              <Location width={"1.7rem"} color={"#fff"} />
               Sehgal Neo Hospital
             </h2>
             <p>
