@@ -1,21 +1,16 @@
 .bannerContainer {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   padding: 1.5rem;
-  top: 5rem;
-  margin-bottom: 7rem;
 }
 
 .heading {
-  font-display: swap;
-  letter-spacing: 1px;
   font-size: 4.5em;
-  line-height: 4em;
-  font-weight: 400;
+  letter-spacing: 2px;
+  font-weight: 500;
   line-height: 1em;
-  height: auto;
-  width: auto;
+  width: 90vw;
+  height: 30vh;
 }
 
 .bg_conter {

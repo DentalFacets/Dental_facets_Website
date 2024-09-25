@@ -3,6 +3,8 @@
     "key": 1,
     "head": "Oral physician and radiology",
     "img" : "/image/Service Image/Oral physician and radiology/haedImage.webp",
+    "description" : "Expert oral and maxillofacial care in Gurgaon. Diagnosis, biopsies, dental X-rays, and treatments for mouth ulcers, TMJ disorders, and tongue issues.",
+    "keywords" : "Dental Facets , oral physician Gurgaon, maxillofacial surgery Gurgaon, dental diagnosis Gurgaon, biopsies Gurgaon, dental X-ray Gurgaon, mouth ulcer treatment Gurgaon, TMJ disorder treatment Gurgaon, tongue tie treatment Gurgaon, dental care Gurgaon, oral health Gurgaon",
     "defi": [
       {
         "Label": "Diagnosis of condition of oral and maxillofacial surgery",
@@ -54,6 +56,8 @@
     "key": 2,
     "head": "Conservative and Endodontics",
     "img" : "/image/Service Image/Conservative and Endodontics/HeadImage.webp",
+    "description" :"Dental Facets in Gurgaon offers expert conservative and endodontic care. Composite fillings, onlays, inlays, bite correction, and more.",
+    "keywords" : "Dental Facets, Dental Facets conservative dentistry Gurgaon, Dental Facets endodontics Gurgaon, Dental Facets composite filling Gurgaon, Dental Facets onlay restoration Gurgaon, Dental Facets inlay restoration Gurgaon, Dental Facets bite correction Gurgaon, Dental Facets space filling Gurgaon, Dental Facets tooth repair Gurgaon, Dental Facets painless root canal treatment Gurgaon, Dental Facets single visit root canal treatment Gurgaon, conservative dentistry Gurgaon, endodontics Gurgaon, composite filling Gurgaon, onlay restoration Gurgaon, inlay restoration Gurgaon, bite correction Gurgaon, space filling Gurgaon, tooth repair Gurgaon, painless root canal treatment Gurgaon, single visit root canal treatment Gurgaon, dental care Gurgaon, oral health Gurgaon",
     "defi": [
       {
         "Label": "Composite filling",
@@ -119,6 +123,8 @@
     "key": 3,
     "head": "Crowns and Bridge",
     "img" : "/image/Service Image/crowns-bridges/headImage.webp",
+    "description":"Expert crowns and bridgework in Gurgaon. Dental crowns, veneers, dentures, and implant-supported solutions for a beautiful smile.",
+    "keywords":"Dental Facets , Dental Facets crowns,Dental Facets bridgework,Dental Facets zirconia crowns,Dental Facets PFM crowns,Dental Facets CAD/CAM crowns,Dental Facets dental veneers,Dental Facets dentures,Dental Facets complete dentures,Dental Facets partial dentures,Dental Facets acrylic crowns,Dental Facets over dentures,Dental Facets implant supported dentures,Dental Facets dental care,Dental Facets oral health,crowns Gurgaon,bridgework Gurgaon,dental crowns Gurgaon,zirconia crowns Gurgaon,PFM crowns Gurgaon,CAD/CAM crowns Gurgaon,dental veneers Gurgaon,dentures Gurgaon,complete dentures Gurgaon,partial dentures Gurgaon,acrylic crowns Gurgaon,over dentures Gurgaon,implant supported dentures Gurgaon,dental care Gurgaon,oral health Gurgaon",
     "defi": [
       {
         "Label": "Dental crowns",
@@ -191,6 +197,8 @@
     "key": 4,
     "head": "Orthodontics and Aligners",
     "img" : "/image/Service Image/Orthodontics and Aligners/headImage.webp",
+    "description":"Orthodontic treatments at Dental Facets in Gurgaon. Metal braces, ceramic braces, clear aligners, and more for a beautiful smile.",
+    "keywords":"Dental factes ,Dental Facets orthodontics Gurgaon, Dental Facets braces Gurgaon, Dental Facets metal braces Gurgaon, Dental Facets ceramic braces Gurgaon, Dental Facets clear aligners Gurgaon, Dental Facets functional appliances Gurgaon, Dental Facets habit breaking appliances Gurgaon, Dental Facets Invisalign Aligner Gurgaon, orthodontics Gurgaon, braces Gurgaon, metal braces Gurgaon, ceramic braces Gurgaon, clear aligners Gurgaon, functional appliances Gurgaon, habit breaking appliances Gurgaon, Invisalign Aligner Gurgaon, dental care Gurgaon, oral health Gurgaon",
     "defi": [
       {
         "Label": "Metal braces",
@@ -242,6 +250,8 @@
     "key": 5,
     "head": "Oral and Maxillofacial Surgery",
     "img" : "/image/Service Image/Oral and Maxillofacial Surgery/headImage.webp",
+    "description":"Dental Facets in Gurgaon offers expert oral and maxillofacial surgery. Painless tooth removal, wisdom tooth extraction, dental implants, and more.",
+    "keywords":" Dental facets , Dental Facets oral and maxillofacial surgery Gurgaon, Dental Facets painless tooth removal Gurgaon, Dental Facets wisdom teeth removal Gurgaon, Dental Facets single tooth implant Gurgaon, Dental Facets implant supported bridge Gurgaon, Dental Facets implant supported denture Gurgaon, Dental Facets immediate implant Gurgaon, Dental Facets bone regeneration Gurgaon, Dental Facets bone grafting Gurgaon, Dental Facets dental cyst Gurgaon, Dental Facets frenectomy Gurgaon, oral and maxillofacial surgery Gurgaon, painless tooth removal Gurgaon, wisdom teeth removal Gurgaon, single tooth implant Gurgaon, implant supported bridge Gurgaon, implant supported denture Gurgaon, immediate implant Gurgaon, bone regeneration Gurgaon, bone grafting Gurgaon, dental cyst Gurgaon, frenectomy Gurgaon, dental care Gurgaon, oral health Gurgaon",
     "defi": [
       {
         "Label": "Painless Tooth Removal",
@@ -322,6 +332,8 @@
     "key": 6,
     "head": "Pediatric Dentistry",
     "img" : "/image/Service Image/Pediatric Dentistry/headImage.webp",
+    "description":"Pediatric dentistry in Gurgaon. Expert care for children's teeth, including root canals, fillings, crowns, and space maintainers.",
+    "keywords":"dental factes , pediatric dentistry Gurgaon, pediatric dentist Gurgaon, children's dentistry Gurgaon, root canal treatment for milk teeth Gurgaon, pulpectomy Gurgaon, pulpotomy Gurgaon, milk tooth extraction Gurgaon, dental filling in milk teeth Gurgaon, dental crown treatment for milk teeth Gurgaon, space maintainer treatment Gurgaon, behavioral management for children Gurgaon, Dental Facets pediatric dentistry Gurgaon, dental care Gurgaon, oral health Gurgaon",
     "defi": [
       {
         "Label": "Root canal treatment in milk teeth (Pulpectomy)",
@@ -381,6 +393,8 @@
     "key": 7,
     "head": "Preventive Dental Care",
     "img" : "/image/Service Image/Preventive Dental Care/HeadImage.webp",
+    "description":"Preventative dental care in Gurgaon. Topical fluoride, fluoride varnish, oral prophylaxis, scaling and polishing, and pit and fissure sealants.",
+    "keywords":"Dental Facets , preventive dental care Gurgaon,topical fluoride treatment Gurgaon,fluoride varnish Gurgaon,oral prophylaxis Gurgaon,scaling and polishing Gurgaon,pit and fissure sealant Gurgaon,Dental Facets preventive dental care Gurgaon,dental care Gurgaon,oral health Gurgaon",
     "defi": [
       {
         "Label": "Topical fluoride treatment",
@@ -425,6 +439,8 @@
     "key": 8,
     "head": " Cosmetic dentistry",
     "img" : "/image/Service Image/Cosmetic/headImage.webp",
+    "description":"Enhance your smile with cosmetic dentistry at Dental Facets in Gurgaon. Instant teeth whitening, veneers, and more.",
+    "keywords":"Dental Facets , cosmetic dentistry Gurgaon, instant teeth whitening Gurgaon, digital smile design Gurgaon, invisible braces Gurgaon, porcelain veneers Gurgaon, composite veneers Gurgaon, gum depigmentation Gurgaon, hydra facial Gurgaon, chemical peel Gurgaon, organic peel Gurgaon, Dental Facets cosmetic dentistry Gurgaon, dental care Gurgaon, oral health Gurgaon",
     "defi": [
       {
         "Label": "Instant Teeth whitening",

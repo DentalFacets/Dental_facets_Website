@@ -4,7 +4,7 @@ import styles from "@/styles/NewNavigation/Navigation.module.css";
 import NavButton from "../Buttons/NavButton";
 import PhoneOption from "./NavOption/PhoneOption";
 import LargeViewOption from "./NavOption/LargeViewOption";
-
+import favicon from "../../../public/image/favicon.webp";
 function Navigation() {
   let [visible, isvisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,17 +35,14 @@ function Navigation() {
     <nav className={`${styles.nav} ${isScrolled ? "bg-black" : ""}`}>
       <div className={styles.navHead}>
         <div className={styles.iconHeadContainer}>
-          <div className={styles.iconContainer}>
-            <Image
-              src={"/image/favicon.webp"}
-              alt="profile image"
-              style={{ objectFit: "cover" }}
-              fill
-              sizes="10vw"
-              priority
-              className=""
-            />
-          </div>
+          <Image
+            src={favicon}
+            alt="favicon image"
+            placeholder="blur"
+            sizes="{max-width:768px} 3rem , 3.6rem"
+            className={styles.iconContainer}
+            priority
+          />
           <h1
             className={`${styles.head} ${
               isScrolled ? "text-[#fff]" : "text-black"

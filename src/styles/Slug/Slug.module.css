@@ -1,17 +1,19 @@
 .slugbanner {
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.65) 0%,
-      rgba(0, 0, 0, 0) 100%,
-      rgba(0, 0, 0, 0)
-    ),
-    url("/image/SlugBanner.webp") no-repeat;
   height: 20vh;
-  width: 100%;
-  background-size: cover;
-  position: relative;
-  background-position: center;
-  display: block;
+  width: 100vw;
+}
+
+.bannerOverlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65) 15%,
+    rgba(0, 0, 0, 0) 130%,
+    rgba(0, 0, 0, 0)
+  );
+  position: absolute;
+  z-index: 1;
+  height: 20vh;
+  width: 100vw;
 }
 
 .mainContianer {
@@ -29,9 +31,8 @@
 }
 
 .imageWrapper {
-  position: relative;
-  width: 100%;
-  height: 30vh;
+  width: 100vw;
+  height: auto;
 }
 
 .para {
@@ -80,9 +81,8 @@
 }
 
 .conImgWrapper {
-  position: relative;
-  width: 100%;
-  height: 30vh;
+  width: 100vw;
+  height: auto;
 }
 
 @media (min-width: 768px) {
@@ -92,27 +92,43 @@
     justify-content: space-evenly;
     align-items: center;
   }
-  .imageWrapper {
-    width: 45%;
+
+  .conImgWrapper {
+    width: 60vw;
   }
+
+  .conImgPara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imageWrapper {
+    width: 40vw;
+  }
+
   .imageF1para p {
-    width: 45%;
+    width: 40vw;
   }
 }
 @media (min-width: 1024px) {
   .mainContianer {
     padding: 2rem 15rem;
   }
+
   .imageWrapper {
     width: 45%;
   }
+  .imageF1para p {
+    width: 40%;
+  }
+
   .mainHead {
     font-size: 2.5rem;
   }
   .container {
     padding: 2rem 16rem;
   }
-  .container:nth-child(odd) div:nth-child(1) {
+  .container:nth-child(odd) img:nth-child(1) {
     order: 2;
   }
 
@@ -128,6 +144,7 @@
 
   .conImgPara {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     margin: 2rem 0;

@@ -7,7 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import PageTransition from "@/components/transition/PageTransition";
 
 const amiri = Amiri({
-  weight: ["400", "700"],
+  weight: ["400"],
   style: ["normal"],
   subsets: ["latin"],
   display: "swap",
@@ -16,12 +16,11 @@ const amiri = Amiri({
 
 export default function App({ Component, pageProps, router }) {
   return (
-    <>
+    <main className={amiri.className}>
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <title>Dental   Facets - Your Trusted Dental Clinic</title>
         <meta
           name="description"
           content=" Your trusted dental clinic for teeth whitening, dental implants, braces, and more. Experienced dentists, personalized care, comfortable atmosphere."
@@ -35,15 +34,13 @@ export default function App({ Component, pageProps, router }) {
         <link rel="icon" href="/image/favicon.webp" />
       </Head>
 
-      <main className={`${amiri.className}`}>
-        <AnimatePresence mode="wait">
-          <PageTransition key={router.asPath}>
-            <Navigation />
-            <Component {...pageProps} />
-            <Footer />
-          </PageTransition>
-        </AnimatePresence>
-      </main>
-    </>
+      <AnimatePresence mode="wait">
+        <PageTransition key={router.asPath}>
+          <Navigation />
+          <Component {...pageProps} />
+          <Footer />
+        </PageTransition>
+      </AnimatePresence>
+    </main>
   );
 }

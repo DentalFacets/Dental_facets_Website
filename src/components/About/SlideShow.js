@@ -46,13 +46,12 @@ function SlideShow() {
               <div className={`flex items-center justify-center w-full p-2`}>
                 <Image
                   src={elem}
-                  alt="about Image"
+                  alt={`about slider ${index}`}
                   width={100}
                   height={100}
                   sizes="100vh"
                   style={{ width: "100vw", height: "auto" }}
-                  priority
-                  className="shadow-zinc-500 shadow-lg rounded-xl mx-10 brightness-125 saturate-[1.5] border-2 border-black"
+                  className="shadow-zinc-500 shadow-lg rounded-xl saturate-[1.5] border-2 border-black"
                 />
               </div>
             </div>
