@@ -49,6 +49,7 @@ function Service() {
           name="keywords"
           content="dental services, dental clinic, dentist, teeth whitening, cosmetic dentistry, porcelain veneers, clear aligners, dental implants, braces, orthodontics, root canal, dental cleaning, dental checkup, dental emergency, dental services, Gurugram dentist"
         />
+        <link rel="canonical" href="https://dentalfacets.netlify.app/Service" />
       </Head>
 
       <div className="relative top-16 bottom-[2rem]">
@@ -68,11 +69,11 @@ function Service() {
         <ServiceTable serviceData={services} scrollToCard={scrollToCard} />
 
         <Appointementbanner />
-        <FadeInUp>
-          <div className="flex justify-center flex-wrap bg-white m-5 rounded-2xl shadow-2xl">
-            {services.map((elem, index) => (
+
+        <div className="flex justify-center flex-wrap bg-white m-5 rounded-2xl shadow-2xl">
+          {services.map((elem, index) => (
+            <FadeInUp key={index}>
               <div
-                key={index}
                 ref={(el) => (cardRefs.current[index] = el)}
                 className={`${styles.moreInfoContainer} ${
                   activecard === index ? styles.selectedCard : "bg-white"
@@ -102,9 +103,9 @@ function Service() {
                   </ul>
                 )}
               </div>
-            ))}
-          </div>
-        </FadeInUp>
+            </FadeInUp>
+          ))}
+        </div>
         <Testimonials />
         <Faq />
       </div>
