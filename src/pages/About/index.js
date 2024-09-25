@@ -105,7 +105,6 @@ function About() {
               alt="welcome image"
               sizes="100vh"
               style={{ objectFit: "cover" }}
-              priority
             />
           </div>
         </div>

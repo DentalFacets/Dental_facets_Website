@@ -4,6 +4,8 @@ import { useRef, useEffect } from "react";
 import styles from "@/styles/Slug/Slug.module.css";
 import Image from "next/image";
 import Head from "next/head";
+import LoadingSpinner from "@/components/transition/PageLoading";
+import slugbanner from "../../../public/image/SlugBanner.webp";
 
 // export async function getStaticPaths() {
 //   // Fetch all services
@@ -76,95 +78,107 @@ const Services = () => {
     }
   };
 
-  if (!path) {
-    return <p>Loading......</p>;
+  if (!services) {
+    return <LoadingSpinner />;
   }
 
   return (
     <>
       <Head>
-        <title>{`Dental Facets | ${path}`}</title>
+        <title>{`Dental Facets | ${services.head} `}</title>
         <link
           rel="canonical"
           href={`${`https://dentalfacets.netlify.app/Service/${path}`}`}
         />
+        <meta name="description" content={services.description} />
+        <meta name="keywords" content={services.keywords} />
       </Head>
-      <div className="relative top-20 mb-20">
-        <div className={styles.slugbanner}></div>
-        <div id="div3">
-          <div id="div3_2">
-            {/* main container head*/}
-            <div className={styles.mainContianer}>
-              <h2 className={styles.mainHead}>{services.head}</h2>
-              <div className={styles.imageF1para}>
-                <div className={styles.imageWrapper}>
+      {services.length == 0 ? (
+        <LoadingSpinner />
+      ) : (
+        <div className="relative top-20 mb-20">
+          <>
+            <div className={styles.bannerOverlay}></div>
+            <Image
+              src={slugbanner}
+              alt={"temp"}
+              sizes="{max-width:768px} 384px, 1280px"
+              style={{ objectFit: "cover" }}
+              placeholder="blur"
+              priority
+              className={styles.slugbanner}
+            />
+          </>
+          <div id="div3">
+            <div id="div3_2">
+              {/* main container head*/}
+              <div className={styles.mainContianer}>
+                <h2 className={styles.mainHead}>{services.head}</h2>
+                <div className={styles.imageF1para}>
                   {services.img && (
                     <Image
                       src={services.img}
                       alt={services.head ? services.head : "temp"}
-                      fill
-                      sizes="100vh"
-                      style={{ objectFit: "cover" }}
-                      priority={true}
-                      className="bg-gray-200"
+                      sizes="{max-width:768px} 384px, 640px"
+                      width={335}
+                      height={187}
+                      className={styles.imageWrapper}
+                      priority
                     />
                   )}
+                  <p className={styles.para}>{services.detail}</p>
                 </div>
-                <p className={styles.para}>{services.detail}</p>
+                <p className={styles.para}>{services.detail2}</p>
               </div>
-              <p className={styles.para}>{services.detail2}</p>
-            </div>
 
-            {/* table of Content*/}
-            <div className={styles.toc}>
-              <h3>Find What You Need</h3>
-              {Array.isArray(services.defi) && (
-                <ul className="md:columns-2">
-                  {services.defi.map((item, index) => {
-                    return (
-                      <li key={index} onClick={() => scrollToCard(index)}>
-                        {item.Label}
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
-            </div>
+              {/* table of Content*/}
+              <div className={styles.toc}>
+                <h3>Find What You Need</h3>
+                {Array.isArray(services.defi) && (
+                  <ul className="md:columns-2">
+                    {services.defi.map((item, index) => {
+                      return (
+                        <li key={index} onClick={() => scrollToCard(index)}>
+                          {item.Label}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+              </div>
 
-            {/* content of services  */}
-            {Array.isArray(services.defi) &&
-              services.defi.map((item, index) => {
-                return (
-                  <div
-                    className={styles.container}
-                    key={index}
-                    ref={(el) => (cardRefs.current[index] = el)}
-                  >
-                    <h2 className={styles.conHead}>
-                      {item.key} - {item.Label}
-                    </h2>
-                    <p className={styles.para}>{item.para}</p>
-                    <div className={styles.conImgPara}>
-                      <div className={styles.conImgWrapper}>
+              {/* content of services  */}
+              {Array.isArray(services.defi) &&
+                services.defi.map((item, index) => {
+                  return (
+                    <div
+                      className={styles.container}
+                      key={index}
+                      ref={(el) => (cardRefs.current[index] = el)}
+                    >
+                      <h2 className={styles.conHead}>
+                        {item.key} - {item.Label}
+                      </h2>
+                      <p className={styles.para}>{item.para}</p>
+                      <div className={styles.conImgPara}>
                         <Image
                           src={item.img ? item.img : "/image/favicon.webp"}
                           alt={item.Label}
-                          fill // This makes the image fill its container
-                          sizes="100vh"
-                          style={{ objectFit: "cover" }} // Optional: adjust object fit based on your design needs
-                          priority={true} // If this is a critical image for performance
-                          className="bg-gray-200"
+                          sizes="{max-width:768px} 384px, 640px"
+                          width={335}
+                          height={187}
+                          className={styles.conImgWrapper}
                         />
+                        <p className={`${styles.para} `}>{item.para2}</p>
                       </div>
-                      <p className={`${styles.para} `}>{item.para2}</p>
+                      <hr className="border-gray-400" />
                     </div>
-                    <hr className="border-gray-400" />
-                  </div>
-                );
-              })}
+                  );
+                })}
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </>
   );
 };

@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import { useRef } from "react";
 import Head from "next/head";
+
 const AboutUS = dynamic(() => import("@/components/About/AboutUS"), {
   ssr: true,
 });
@@ -34,9 +35,8 @@ const ImageGallery = dynamic(() =>
 
 export default function Home() {
   const divRef = useRef();
-
   return (
-    <>
+    <main className="mainContianer">
       <Head>
         <title>Dental Facets - Your Trusted Dental Clinic</title>
         <meta
@@ -49,38 +49,35 @@ export default function Home() {
         />
         <link rel="canonical" href="https://dentalfacets.netlify.app/" />
       </Head>
+      <Suspense fallback={<div>Loading banner...</div>}>
+        <BannerIndex divRef={divRef} />
+      </Suspense>
 
-      <main>
-        <Suspense fallback={<div>Loading banner...</div>}>
-          <BannerIndex divRef={divRef} />
+      <Suspense fallback={<div>Loading About Us...</div>}>
+        <AboutUS />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Services...</div>}>
+        <ServiceCards />
+      </Suspense>
+
+      <div ref={divRef}>
+        <Suspense fallback={<div>Loading Form...</div>}>
+          <Form />
         </Suspense>
+      </div>
 
-        <Suspense fallback={<div>Loading About Us...</div>}>
-          <AboutUS />
-        </Suspense>
+      <Suspense fallback={<div>Loading Doctor Banner...</div>}>
+        <Testimonials />
+      </Suspense>
 
-        <Suspense fallback={<div>Loading Services...</div>}>
-          <ServiceCards />
-        </Suspense>
+      <Suspense fallback={<div>Loading Doctor Banner...</div>}>
+        <Doctorbanner />
+      </Suspense>
 
-        <div ref={divRef}>
-          <Suspense fallback={<div>Loading Form...</div>}>
-            <Form />
-          </Suspense>
-        </div>
-
-        <Suspense fallback={<div>Loading Doctor Banner...</div>}>
-          <Testimonials />
-        </Suspense>
-
-        <Suspense fallback={<div>Loading Doctor Banner...</div>}>
-          <Doctorbanner />
-        </Suspense>
-
-        <Suspense fallback={<div>Loading Doctor Banner...</div>}>
-          <ImageGallery />
-        </Suspense>
-      </main>
-    </>
+      <Suspense fallback={<div>Loading Doctor Banner...</div>}>
+        <ImageGallery />
+      </Suspense>
+    </main>
   );
 }
