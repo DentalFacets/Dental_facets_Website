@@ -1,0 +1,6 @@
+# Allow all web crawlers to index all content
+User-agent: *
+Disallow:
+
+# Sitemap URL
+Sitemap: https://dentalfacets.netlify.app//sitemap.xml

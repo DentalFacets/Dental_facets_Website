@@ -47,17 +47,17 @@ function Footer() {
             </Link>
           </p>
           <p>
-            <Link className={styles.FootP} href={"/AboutUsPage"}>
+            <Link className={styles.FootP} href={"/About"}>
               About Us
             </Link>
           </p>
           <p>
-            <Link className={styles.FootP} href={"/ServicePage"}>
+            <Link className={styles.FootP} href={"/Service"}>
               Services
             </Link>
           </p>
           <p>
-            <Link className={styles.FootP} href={"/ContactPage"}>
+            <Link className={styles.FootP} href={"/Contact"}>
               Contact Us
             </Link>
           </p>

@@ -106,6 +106,7 @@ const Services = () => {
                       sizes="100vh"
                       style={{ objectFit: "cover" }}
                       priority={true}
+                      className="bg-gray-200"
                     />
                   )}
                 </div>
@@ -150,9 +151,9 @@ const Services = () => {
                           alt={item.Label}
                           fill // This makes the image fill its container
                           sizes="100vh"
-                          style={{ objectFit: "contain" }} // Optional: adjust object fit based on your design needs
+                          style={{ objectFit: "cover" }} // Optional: adjust object fit based on your design needs
                           priority={true} // If this is a critical image for performance
-                          className=" scale-110"
+                          className="bg-gray-200"
                         />
                       </div>
                       <p className={`${styles.para} `}>{item.para2}</p>
