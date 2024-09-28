@@ -70,6 +70,7 @@ function Footer() {
               className={styles.FootP}
               href={"https://wa.me/8447057806"}
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="m-1">
                 <WhatsApp width={"3vh"} />
@@ -84,6 +85,7 @@ function Footer() {
                 "https://www.facebook.com/share/EpB4ThMJiarg9KBh/?mibextid=qi2Omg"
               }
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="">
                 <Facebook width={"4vh"} />
@@ -96,6 +98,7 @@ function Footer() {
               className={styles.FootP}
               href={"https://www.instagram.com/dental.facets/"}
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="">
                 <Instagram width={"5vh"} />

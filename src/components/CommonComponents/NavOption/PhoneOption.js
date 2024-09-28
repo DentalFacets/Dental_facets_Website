@@ -67,26 +67,34 @@ function PhoneOption({ visible }) {
               Bagh, Paschim Vihar, New Delhi, Delhi, 110063
             </p>
           </Link>
-          <Link
-            href={"mailto:dentalfacets2016@gmial.com"}
-            className="flex gap-1 ml-2 text-lg text-[#ffce45]"
-          >
-            <Email width={"1.3rem"} color={"#fff"} />
-            dentalfacets2016@gmial.com
-          </Link>
         </div>
         <div className="flex space-x-2 w-full border-t-[0.1rem] items-center justify-evenly p-5">
-          <Link href="https://www.instagram.com/dental.facets/" target="_blank">
+          <Link
+            href="https://www.instagram.com/dental.facets/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
             <Instagram width={"2.5rem"} />
           </Link>
           <Link
             href="https://www.facebook.com/share/EpB4ThMJiarg9KBh/?mibextid=qi2Omg"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
           >
             <Facebook width={"2rem"} />
           </Link>
-          <Link href="https://wa.me/8447057806" target="_blank">
+          <Link
+            href="https://wa.me/8447057806"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Whatsapp"
+          >
             <WhatsApp width={"1.6rem"} />
+          </Link>
+          <Link href={`mailto:${mail}`}>
+            <Email width={"1.8rem"} color={"#fff"} />
           </Link>
         </div>
       </div>
