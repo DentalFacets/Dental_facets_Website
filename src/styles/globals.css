@@ -44,3 +44,11 @@ html {
   position: relative;
   top: 4.5rem;
 }
+::-moz-selection {
+  color: antiquewhite;
+  background: #000;
+}
+::selection {
+  color: antiquewhite;
+  background: #000;
+}
