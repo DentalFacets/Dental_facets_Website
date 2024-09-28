@@ -41,7 +41,7 @@ export default function Home() {
         <title>Dental Facets - Your Trusted Dental Clinic</title>
         <meta
           name="description"
-          content="Dental Facets offers comprehensive dental care services, including teeth whitening, dental composites, instant teeth whitening, dental crown removal, and more. Our experienced team is dedicated to providing personalized care in a comfortable and welcoming environment."
+          content=" Discover exceptional dental care at Dental Facets. We specialize in teeth whitening, dental composites, and more, ensuring personalized service in a welcoming setting."
         />
         <meta
           name="keywords"

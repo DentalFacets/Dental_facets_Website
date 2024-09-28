@@ -44,10 +44,10 @@ function PhoneOption({ visible }) {
             target="blank"
             className={styles.navbtn}
           >
-            <h2>
+            <i className={styles.heading2}>
               <Location width={"1.7rem"} color={"#fff"} />
               Dental Facets
-            </h2>
+            </i>
             <p>
               560-P, behind Jalvayu Towers, Block B, Sector 56, Gurugram,
               Haryana 122001
@@ -58,18 +58,18 @@ function PhoneOption({ visible }) {
             target="blank"
             className={styles.navbtn}
           >
-            <h2>
+            <i className={styles.heading2}>
               <Location width={"1.7rem"} color={"#fff"} />
               Sehgal Neo Hospital
-            </h2>
-            <p>
+            </i>
+            <p className={styles.ptag}>
               B-362 363, 364, Outer Ring Rd, near to ICICI Bank, Block B, Meera
               Bagh, Paschim Vihar, New Delhi, Delhi, 110063
             </p>
           </Link>
           <Link
             href={"mailto:dentalfacets2016@gmial.com"}
-            className=" flex gap-1 ml-2 text-lg text-[#ffce45]"
+            className="flex gap-1 ml-2 text-lg text-[#ffce45]"
           >
             <Email width={"1.3rem"} color={"#fff"} />
             dentalfacets2016@gmial.com
