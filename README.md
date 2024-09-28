@@ -31,7 +31,7 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/username/dental-facets.git
+    git clone https://github.com/ZOD-IAC/Dental_website.git
     ```
 
 2. Navigate to the project directory:
