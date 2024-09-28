@@ -93,7 +93,9 @@ function PhoneOption({ visible }) {
           >
             <WhatsApp width={"1.6rem"} />
           </Link>
-          <Link href={`mailto:${mail}`}>
+          <Link
+            href={`mailto:&#100;&#101;&#110;&#116;&#097;&#108;&#102;&#097;&#099;&#101;&#116;&#115;&#050;&#048;&#049;&#054;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;`}
+          >
             <Email width={"1.8rem"} color={"#fff"} />
           </Link>
         </div>
