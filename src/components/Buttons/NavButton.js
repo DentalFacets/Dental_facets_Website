@@ -7,6 +7,7 @@ export default function NavButton({ visible, handlelcick, isScrolled }) {
         visible ? "transition-all duration-500 rotate-180" : " duration-500"
       }`}
       onClick={handlelcick}
+      aria-label="Phone Nav toggle"
     >
       <DownArrow width={"10vw"} color={`${isScrolled ? "#fff" : "#000"}`} />
     </button>

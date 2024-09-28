@@ -68,6 +68,7 @@ function LargeViewOption({ isScrolled }) {
               <Link
                 href={"https://maps.app.goo.gl/VRoQe8cue4r3sVe49"}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 560-P, behind Jalvayu Towers, Block B, Sector 56, Gurugram,
                 Haryana 122001
@@ -80,6 +81,7 @@ function LargeViewOption({ isScrolled }) {
               <Link
                 href={"https://maps.app.goo.gl/1DRsDMDqdXdCgW1F8"}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 B-362 363, 364, Outer Ring Rd, near to ICICI Bank, Block B,
                 Meera Bagh, Paschim Vihar, New Delhi, Delhi, 110063

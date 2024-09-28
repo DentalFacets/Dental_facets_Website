@@ -233,7 +233,7 @@ function Form() {
 
         <div className={"flex items-center justify-center"}>
           <button
-            className="w-full bg-lime-500 rounded-md p-4 text-xl"
+            className="w-full bg-lime-500 rounded-md p-4 text-xl text-slate-900 font-bold"
             type="submit"
             disabled={loading}
           >
