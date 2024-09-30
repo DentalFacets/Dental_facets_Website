@@ -30,7 +30,7 @@ export default function App({ Component, pageProps, router }) {
           content="dentist, dental clinic, dental care, cosmetic dentistry, restorative dentistry, pediatric dentistry, dental implants, teeth whitening, braces, orthodontics, root canal, dental cleaning, dental checkup, dental emergency, dental services, Gurugram dentist"
         />
         <meta name="author" content="Dental Facets" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="max-snippet:200" />
         <link rel="icon" href="/image/favicon.webp" />
       </Head>
 
