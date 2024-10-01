@@ -47,7 +47,9 @@ const MasonryGallery = () => {
     <div className="bg-[#2d2d2d] pb-5 mb-5">
       <h3 className={styles.head}>Image Gallery</h3>
       <div className="flex flex-col items-center justify-center lg:flex-row">
-        <Carousel />
+        <div>
+          <Carousel />
+        </div>
         <div className={styles.masonryContainer}>
           <div className={styles.masonry}>
             {imageData.map((src, index) => (

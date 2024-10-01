@@ -1,11 +1,12 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import styles from "@/styles/Gallery/ImageGallery.module.css";
 import Image from "next/image";
+import ourStory from "../../../public/image/webImages/OurStory.webp";
+import weldenFac from "../../../public/image/webImages/welDenFac.webp";
 
-const imageData = [
-  "/image/webImages/OurStory.webp",
-  "/image/webImages/welDenFac.webp",
-];
+const imageData = [ourStory, weldenFac];
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,11 +46,12 @@ const Carousel = () => {
             <Image
               key={index}
               src={src}
+              placeholder="blur"
               width={500}
               height={500}
-              sizes={"100vh"}
+              sizes="(max-widht: 768px) 400px, 500px"
               alt={`carousel-${index}`}
-              className={styles.img}
+              className={"w-[400px] md:w-[500px] saturate-150"}
             />
           ))}
         </div>
