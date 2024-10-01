@@ -4,19 +4,17 @@ import FadeInUp from "../transition/FadeInUp";
 
 const PageCharts = React.lazy(() => import("./PageCharts"));
 const AboutCards = React.lazy(() => import("./AboutCards"));
-const SlideShow = React.lazy(() => import("./SlideShow"));
+const EmblaCarousel = React.lazy(() => import("./EmblaCarousel"));
 
 function AboutUS() {
   return (
     <div className={styles.aboutContainer}>
       <div className={`${styles.abt1wrapper}`}>
-        <div className="w-2/4 flex items-center justify-center my-5">
-          <div className={`${styles.imgbg}`}></div>
-          <div className="w-full flex items-center justify-center">
-            <Suspense fallback={<div>Loading Slideshow...</div>}>
-              <SlideShow />
-            </Suspense>
-          </div>
+        <div className={styles.sliderWrapper}>
+          <div className={styles.imgbg}></div>
+          <Suspense fallback={<div>Loading Slideshow...</div>}>
+            <EmblaCarousel />
+          </Suspense>
         </div>
 
         <div className="lg:w-2/4">

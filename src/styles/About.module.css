@@ -18,13 +18,20 @@
   box-shadow: 0.625rem 0.625rem 0.875rem 0 rgba(220, 220, 220, 1),
     -1.5rem -0.5rem 2.125rem 0 rgba(220, 220, 220, 1);
 }
+.sliderWrapper {
+  height: 40vh;
+  width: calc(100% - 5vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .imgbg {
   position: absolute;
   background-color: #facc1537;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  height: 16rem;
-  width: 14rem;
+  height: 40vh;
+  width: calc(100% - 15vh);
 }
 
 .imageWrapper {
@@ -72,5 +79,8 @@
 @media (min-width: 1024px) {
   .abt1wrapper {
     flex-direction: row;
+  }
+  .sliderWrapper {
+    width: 50%;
   }
 }

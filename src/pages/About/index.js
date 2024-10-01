@@ -99,7 +99,7 @@ function About() {
           </div>
           <div className={styles.imageWrapper}>
             <Image
-              className="rounded-full md:rounded-xl"
+              className=" rounded-3xl md:rounded-xl"
               src={"/image/webImages/welDenFac.webp"}
               fill
               alt="welcome image"

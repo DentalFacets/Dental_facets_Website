@@ -11,7 +11,7 @@ function DoctorCards({ name, avt, year, para, consult }) {
         }
       >
         <Image
-          className={"rounded-full drop-shadow-xl saturate-150"}
+          className={"rounded-full drop-shadow-xl saturate-[1.1]"}
           src={avt ? avt : "/image/avatars/cat.jpg"}
           alt="progile image"
           sizes="100vh"

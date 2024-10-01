@@ -42,7 +42,7 @@ html {
 
 .mainContianer {
   position: relative;
-  top: 4.5rem;
+  top: 5rem;
 }
 ::-moz-selection {
   color: antiquewhite;
@@ -51,4 +51,15 @@ html {
 ::selection {
   color: antiquewhite;
   background: #000;
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }
