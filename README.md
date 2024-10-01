@@ -1,3 +1,4 @@
+![alt text](https://github.com/ZOD-IAC/Dental_website/blob/main/public/image/Screenshot%202024-10-01%20115328.png)
 
 # Project Title
 
@@ -30,19 +31,21 @@ This project is a professional website for the Dental Facets clinic, developed u
 To set up the project locally, follow these steps:
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/ZOD-IAC/Dental_website.git
-    ```
+
+   ```bash
+   git clone https://github.com/username/dental-facets.git
+   ```
 
 2. Navigate to the project directory:
-    ```bash
-    cd dental-facets
-    ```
+
+   ```bash
+   cd dental-facets
+   ```
 
 3. Install the dependencies:
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 ## Usage
 
@@ -50,3 +53,4 @@ To run the development server:
 
 ```bash
 npm run dev
+```

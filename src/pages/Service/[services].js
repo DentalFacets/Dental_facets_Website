@@ -122,6 +122,8 @@ const Services = () => {
                       sizes="{max-width:768px} 384px, 640px"
                       width={335}
                       height={187}
+                      placeholder="blur"
+                      blurDataURL={services.img}
                       className={styles.imageWrapper}
                       priority
                     />
