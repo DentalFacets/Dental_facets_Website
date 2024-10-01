@@ -11,7 +11,7 @@ function EmblaCarousel() {
     "/image/webImages/About2img_.webp",
   ];
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [
+  const [emblaRef] = useEmblaCarousel({ loop: false }, [
     Autoplay({ delay: 2000 }),
   ]);
 
