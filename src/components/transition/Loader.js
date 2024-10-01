@@ -3,9 +3,15 @@ import styles from "@/styles/Loader/Loader.module.css";
 
 export default function Loader() {
   return (
-    <div className={styles.loader}>
-      <div className={styles.tooth}></div>
-      <div className={styles.circle}></div>
+    <div className="flex justify-center ">
+      <div class={styles.typing_indicator}>
+        <div class={styles.typing_circle}></div>
+        <div class={styles.typing_circle}></div>
+        <div class={styles.typing_circle}></div>
+        <div class={styles.typing_shadow}></div>
+        <div class={styles.typing_shadow}></div>
+        <div class={styles.typing_shadow}></div>
+      </div>
     </div>
   );
 }
