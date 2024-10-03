@@ -15,6 +15,8 @@ function DoctorCards({ name, avt, year, para, consult }) {
           src={avt ? avt : "/image/avatars/cat.jpg"}
           alt="progile image"
           sizes="100vh"
+          placeholder="blur"
+          blurDataURL={avt}
           style={{ objectFit: "cover" }}
           fill
         />

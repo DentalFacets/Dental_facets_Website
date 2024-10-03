@@ -6,6 +6,9 @@ import Doctorbanner from "@/components/DoctorComponent/Doctorbanner";
 import Appointementbanner from "@/components/CommonComponents/Appointementbanner";
 import ImageGallery from "@/components/About/ImageGallery";
 import Head from "next/head";
+import abt1 from "../../../public/image/webImages/welDenFac.webp";
+import abt2 from "../../../public/image/webImages/OurStory.webp";
+import abt3 from "../../../public/image/webImages/welDenFac.webp";
 
 function About() {
   return (
@@ -44,8 +47,9 @@ function About() {
           <div className={styles.imageWrapper}>
             <Image
               className=" rounded-3xl shadow-lg ld:rounded-lg mx-1 saturate-[1.5]"
-              src={"/image/webImages/welDenFac.webp"}
+              src={abt1}
               fill
+              placeholder="blur"
               sizes="100vh"
               alt="welcome image "
               style={{ objectFit: "cover" }}
@@ -72,8 +76,9 @@ function About() {
           <div className={styles.imageWrapper}>
             <Image
               className=" rounded-3xl shadow-lg ld:rounded-lg lg:mx-1"
-              src={"/image/webImages/OurStory.webp"}
+              src={abt2}
               fill
+              placeholder="blur"
               sizes="100vh"
               alt="welcome image "
               style={{ objectFit: "cover" }}
@@ -100,7 +105,8 @@ function About() {
           <div className={styles.imageWrapper}>
             <Image
               className=" rounded-3xl md:rounded-xl"
-              src={"/image/webImages/welDenFac.webp"}
+              src={abt3}
+              placeholder="blur"
               fill
               alt="welcome image"
               sizes="100vh"
