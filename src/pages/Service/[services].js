@@ -7,66 +7,66 @@ import Head from "next/head";
 import LoadingSpinner from "@/components/transition/PageLoading";
 import slugbanner from "../../../public/image/SlugBanner.webp";
 
-export async function getStaticPaths() {
-  // Fetch all services
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/serData`);
-  const services = await res.json();
+// export async function getStaticPaths() {
+//   // Fetch all services
+//   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/serData`);
+//   const services = await res.json();
 
-  // Generate paths for each service based on the 'head' field
-  const paths = services.map((service) => ({
-    params: { services: service.head },
-  }));
+//   // Generate paths for each service based on the 'head' field
+//   const paths = services.map((service) => ({
+//     params: { services: service.head },
+//   }));
 
-  return {
-    paths,
-    fallback: true,
-  };
-}
+//   return {
+//     paths,
+//     fallback: true,
+//   };
+// }
 
-export async function getStaticProps({ params }) {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/serData?head=${params.services}`
-  );
-  const data = await res.json();
+// export async function getStaticProps({ params }) {
+//   const res = await fetch(
+//     `${process.env.NEXT_PUBLIC_BASE_URL}/api/serData?head=${params.services}`
+//   );
+//   const data = await res.json();
 
-  if (!data) {
-    return {
-      notFound: true,
-    };
-  }
+//   if (!data) {
+//     return {
+//       notFound: true,
+//     };
+//   }
 
-  return {
-    props: {
-      services: data,
-    },
-    revalidate: 60, // Revalidate every 60 seconds
-  };
-}
+//   return {
+//     props: {
+//       services: data,
+//     },
+//     revalidate: 60, // Revalidate every 60 seconds
+//   };
+// }
 
-const Services = ({ services }) => {
+const Services = () => {
   const router = useRouter();
   const path = router.query.services;
   const cardRefs = useRef([]);
-  // const [services, setServices] = useState([]);
+  const [services, setServices] = useState([]);
 
   //fetching data using useEffect // Calling data from local API
-  // useEffect(() => {
-  //   const fetchServices = async () => {
-  //     if (path) {
-  //       try {
-  //         const response = await fetch(
-  //           `${process.env.NEXT_PUBLIC_BASE_URL}/api/serData?head=${path}`
-  //         );
-  //         const data = await response.json();
-  //         setServices(data);
-  //       } catch (error) {
-  //         console.error("Error fetching services data:", error);
-  //       }
-  //     }
-  //   };
+  useEffect(() => {
+    const fetchServices = async () => {
+      if (path) {
+        try {
+          const response = await fetch(
+            `${process.env.NEXT_PUBLIC_BASE_URL}/api/serData?head=${path}`
+          );
+          const data = await response.json();
+          setServices(data);
+        } catch (error) {
+          console.error("Error fetching services data:", error);
+        }
+      }
+    };
 
-  //   fetchServices();
-  // }, [path]);
+    fetchServices();
+  }, [path]);
 
   // Scroll to card function
   const scrollToCard = (index) => {
