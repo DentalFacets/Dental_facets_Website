@@ -54,7 +54,6 @@
 
 .image {
   border-radius: 8px;
-  width: 100%;
   display: block;
   border: 1px solid #fff;
   cursor: pointer;
@@ -93,7 +92,7 @@
 }
 
 .focusImage {
-  width: 90%;
+  width: 300px;
   height: auto;
   border-radius: 8px;
   object-fit: contain;
@@ -113,6 +112,9 @@
   }
   .masonryContainer {
     height: 400px;
+  }
+  .focusImage {
+    width: 300px;
   }
 }
 
@@ -134,9 +136,6 @@
     width: 50%;
   }
 
-  .focusImage {
-    width: 35%;
-  }
   .modalContent {
     max-width: fit-content;
     max-height: 0;

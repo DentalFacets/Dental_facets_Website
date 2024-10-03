@@ -88,8 +88,9 @@ const MasonryGallery = () => {
             <Image
               src={focusImage}
               alt="Focused Image"
-              width={1000}
-              height={600}
+              width={350}
+              height={610}
+              sizes="300px"
               style={{ objectFit: "contain" }}
               className={`${styles.focusImage} ${
                 isModalActive ? styles.imageActive : ""
