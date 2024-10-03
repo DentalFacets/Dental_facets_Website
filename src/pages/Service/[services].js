@@ -55,7 +55,8 @@ const Services = () => {
       if (path) {
         try {
           const response = await fetch(
-            `${process.env.NEXT_PUBLIC_BASE_URL}/api/serData?head=${path}`
+            // `${process.env.NEXT_PUBLIC_BASE_URL}/api/serData?head=${path}`
+            `/api/serData?head=${path}`
           );
           const data = await response.json();
           setServices(data);
