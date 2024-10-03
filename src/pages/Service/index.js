@@ -49,7 +49,7 @@ function Service() {
           name="keywords"
           content="dental services, dental clinic, dentist, teeth whitening, cosmetic dentistry, porcelain veneers, clear aligners, dental implants, braces, orthodontics, root canal, dental cleaning, dental checkup, dental emergency, dental services, Gurugram dentist"
         />
-        <link rel="canonical" href="https://dentalfacets.netlify.app/Service" />
+        <link rel="canonical" href="https://dentalfacets.in/Service" />
       </Head>
 
       <div className="relative top-16 bottom-[2rem]">

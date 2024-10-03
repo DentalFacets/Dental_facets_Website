@@ -23,7 +23,7 @@ function About() {
           name="keywords"
           content="dental clinic, dentist, dental services, teeth whitening, veneers, dental implants, braces, orthodontics, root canal, dental cleaning, dental checkup, dental emergency, dental services, Gurugram dentist"
         />
-        <link rel="canonical" href="https://dentalfacets.netlify.app/About" />
+        <link rel="canonical" href="https://dentalfacets.in/About" />
       </Head>
       <div className="relative top-16">
         <h1 className={styles.abtUsHeading}> About Us</h1>

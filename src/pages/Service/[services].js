@@ -89,7 +89,7 @@ const Services = () => {
         <title>{`Dental Facets | ${services.head} `}</title>
         <link
           rel="canonical"
-          href={`${`https://dentalfacets.netlify.app/Service/${path}`}`}
+          href={`${`https://dentalfacets.in/Service/${path}`}`}
         />
         <meta name="description" content={services.description} />
         <meta name="keywords" content={services.keywords} />

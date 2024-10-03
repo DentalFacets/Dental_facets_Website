@@ -19,7 +19,7 @@ function Contact() {
           name="keywords"
           content="dental invisible braces, invisible braces on teeth, dental gum, correction of teeth, fluoride for the teeth, braces teeth braces, root canal, dental and implant, implants dental implants, tooth canal"
         />
-        <link rel="canonical" href="https://dentalfacets.netlify.app/Contact" />
+        <link rel="canonical" href="https://dentalfacets.in/Contact" />
       </Head>
 
       <div className="relative top-16">

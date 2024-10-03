@@ -47,7 +47,7 @@ export default function Home() {
           name="keywords"
           content="dental clinic, dental care, dentist, teeth whitening, dental composites, instant teeth whitening, dental crown removal, aligners for teeth, invisible aligners, dental braces, endodontics, dental services, dental treatment, Gurugram dentist"
         />
-        <link rel="canonical" href="https://dentalfacets.netlify.app/" />
+        <link rel="canonical" href="https://dentalfacets.in/" />
       </Head>
       <Suspense fallback={<div>Loading banner...</div>}>
         <BannerIndex divRef={divRef} />
