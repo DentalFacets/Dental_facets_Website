@@ -53,6 +53,7 @@ function BannerIndex({ divRef }) {
               height={212.7}
               sizes="(max-widht: 768px) 384px, 480px"
               alt="banner image"
+              priority={true}
             />
             <Link href={"/About"} className={styles.know_more}>
               Know more

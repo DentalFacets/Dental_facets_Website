@@ -21,6 +21,7 @@
 }
 
 .BookBtn {
+  font-display: swap;
   background: black;
   color: white;
   border: none;
