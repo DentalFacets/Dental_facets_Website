@@ -21,7 +21,6 @@
 }
 
 .BookBtn {
-  font-display: swap;
   background: black;
   color: white;
   border: none;
@@ -39,6 +38,7 @@
   border: 1px solid white;
   position: absolute;
   z-index: 0;
+  font-display: swap;
 }
 
 .BookBtn:hover {
