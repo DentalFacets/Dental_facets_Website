@@ -49,11 +49,11 @@ function About() {
               className=" rounded-3xl shadow-lg ld:rounded-lg mx-1 saturate-[1.5]"
               src={abt1}
               fill
-              placeholder="blur"
+              // placeholder="blur"
               sizes="100vh"
               alt="welcome image "
               style={{ objectFit: "cover" }}
-              loading="lazy"
+              priority="true"
             />
           </div>
         </div>

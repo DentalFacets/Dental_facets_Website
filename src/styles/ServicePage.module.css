@@ -70,6 +70,7 @@
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   width: 20rem;
+  height: 90%;
   transition: all;
   transition-duration: 100ms;
 }
