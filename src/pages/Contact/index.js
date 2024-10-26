@@ -44,11 +44,11 @@ function Contact() {
           </p>
           <p>
             Address : <br />
-            <Link href={"#map"} className={styles.linkTags}>
+            <span href={"#map"} className={styles.linkTags}>
               560-P, behind Jalvayu Towers, Block B, Sector 56, Gurugram,
-              Haryana 122001 -{" "}
-              <span> Near Mor Market , Alpine Convent Cchool </span>
-            </Link>
+              Haryana 122001 -
+              <span> Near Mor Market , Alpine Convent School </span>
+            </span>
           </p>
           <p>
             Business Hours :<br />

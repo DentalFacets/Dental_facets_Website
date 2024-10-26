@@ -3,10 +3,10 @@ import styles from "@/styles/ServicePage.module.css";
 import { ReadMore } from "@/svgs/OtherIcon";
 
 function Faq() {
-  const [visibleFaq, setVisibleFaq] = useState(null);
+  const [visibleFaq, setVisibleFaq] = useState(false);
 
   const handleClick = (index) => {
-    setVisibleFaq((prevIndex) => (prevIndex === index ? null : index));
+    setVisibleFaq((prevIndex) => (prevIndex === index ? false : index));
   };
 
   const FaqData = [
@@ -57,7 +57,7 @@ function Faq() {
             <div
               className={`${styles.paraDiv} ${
                 visibleFaq === index ? "max-h-[28rem]" : "max-h-[0]"
-              } transition-max-height duration-100 overflow-hidden`}
+              }`}
             >
               <p>{elem.para}</p>
             </div>
