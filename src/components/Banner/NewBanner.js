@@ -70,7 +70,7 @@ const ModernDentalHero = ({ divRef }) => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative px-6 max-w-7xl mx-auto">
+      <div className="relative pt-20 md:pt-0 px-6 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center min-h-screen">
           {/* Left Column */}
           <div className="w-full md:w-1/2 py-12 md:py-24">
