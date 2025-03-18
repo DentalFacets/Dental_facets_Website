@@ -42,7 +42,7 @@ html {
 
 .mainContianer {
   position: relative;
-  top: 5rem;
+  /* top: 5rem; */
 }
 ::-moz-selection {
   color: antiquewhite;

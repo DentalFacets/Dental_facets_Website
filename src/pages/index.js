@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import { useRef } from "react";
 import Head from "next/head";
-import BannerIndex from "@/components/Banner/BannerIndex";
+import ModernDentalHero from "@/components/Banner/NewBanner";
 
 const AboutUS = dynamic(() => import("@/components/About/AboutUS"), {
   ssr: true,
@@ -22,9 +22,6 @@ const Doctorbanner = dynamic(
 const Form = dynamic(() => import("@/components/OtherComponents/Form"), {
   ssr: true,
 });
-// const BannerIndex = dynamic(() => import("@/components/Banner/BannerIndex"), {
-//   ssr: true,
-// });
 
 const Testimonials = dynamic(() =>
   import("@/components/OtherComponents/Testimonials")
@@ -50,10 +47,7 @@ export default function Home() {
         />
         <link rel="canonical" href="https://dentalfacets.in/" />
       </Head>
-      {/* <Suspense fallback={<div>Loading banner...</div>}> */}
-      <BannerIndex divRef={divRef} />
-      {/* </Suspense> */}
-
+      <ModernDentalHero divRef={divRef} />
       <Suspense fallback={<div>Loading About Us...</div>}>
         <AboutUS />
       </Suspense>
